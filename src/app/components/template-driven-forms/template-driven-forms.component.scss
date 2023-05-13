@@ -1,0 +1,37 @@
+.wrapper {
+  width: 300px;
+  margin: 0 auto;
+}
+
+//.ng-invalid {
+//  border-left: 5px solid #a94442; /* red */
+//}
+.ng-invalid:not(form) {
+  border: 2px solid #b64d4a; /* red */
+}
+
+form {
+  background: #c4ffc8;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px 30px;
+
+  &.ng-invalid {
+    background: lightyellow;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  input {
+    border-radius: 5px;
+  }
+
+  select {
+    border-radius: 5px;
+  }
+}
